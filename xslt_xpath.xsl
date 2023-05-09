@@ -11,22 +11,22 @@
       <body>
         <div class="table-container">
             <div>
-                <h2>Zadanie A)</h2>
+                <h1>Osoby</h1>
                 <xsl:apply-templates select="dane" mode="zadA"/>
             </div>
             
             <div>
-                <h2>Zadanie B)</h2>
+                <h1>Osoby sort</h1>
                 <xsl:apply-templates select="dane" mode="zadB"/> 
             </div>
                     
             <div>
-                <h2>Zadanie C)</h2>
+                <h1>Grupy Krwi</h1>
                 <xsl:apply-templates select="dane" mode="zadC"/> 
             </div>
                     
             <div>
-                <h2>Zadanie D)</h2>
+                <h1>Osoby + BMI</h1>
                 <xsl:apply-templates select="dane" mode="zadD"/> 
             </div>      
         </div>

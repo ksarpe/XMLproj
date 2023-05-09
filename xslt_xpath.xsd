@@ -7,7 +7,7 @@
           <xs:complexType>
             <xs:sequence>
               <xs:element name="imie" type="xs:string"/>
-              <xs:element name="data" type="xs:date"/>
+              <xs:element name="data" type="xs:string"/>
               <xs:element name="wiek" type="ageType"/>
               <xs:element name="waga" type="weightType"/>
               <xs:element name="wzrost" type="heightType"/>
@@ -21,7 +21,7 @@
   
   <xs:simpleType name="ageType">
     <xs:restriction base="xs:integer">
-      <xs:minInclusive value="40"/>
+      <xs:minInclusive value="20"/>
       <xs:maxInclusive value="120"/>
     </xs:restriction>
   </xs:simpleType>

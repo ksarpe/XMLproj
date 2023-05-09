@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <?xml-stylesheet type="text/xsl" href="xslt_xpath.xsl"?>
-<dane>
+<dane xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="xslt_xpath.xsd">
 	<osoba>
 		<imie>Dora Church</imie>
 		<data>11/19/2018</data>
