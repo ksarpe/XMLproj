@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="dane">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="osoba" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="imie" type="xs:string"/>
+              <xs:element name="data" type="xs:date"/>
+              <xs:element name="wiek" type="ageType"/>
+              <xs:element name="waga" type="weightType"/>
+              <xs:element name="wzrost" type="heightType"/>
+              <xs:element name="krew" type="bloodType"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:simpleType name="ageType">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="40"/>
+      <xs:maxInclusive value="120"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <xs:simpleType name="weightType">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="45"/>
+      <xs:maxInclusive value="150"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <xs:simpleType name="heightType">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="100"/>
+      <xs:maxInclusive value="220"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <xs:simpleType name="bloodType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="A"/>
+      <xs:enumeration value="B"/>
+      <xs:enumeration value="AB"/>
+      <xs:enumeration value="0"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
